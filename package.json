@@ -2,7 +2,9 @@
   "name": "node-db4-project",
   "version": "1.0.0",
   "scripts": {
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "createdb": "knex migrate:latest",
+    "dropdb": "knex migrate:rollback"
   },
   "repository": {
     "type": "git",
